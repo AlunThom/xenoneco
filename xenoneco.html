@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Xenoneco</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style>
+
+.toplogo {
+	margin-top: 5px;
+}
+
+.toplogo img {
+	height: 10%;
+    width: 30%;
+}
+
+
+body {
+	font-family: "Montserrat", sans-serif
+}
+
+.responsive {
+	width: 100%
+	max-width: 400px;
+	height: auto;
+}
+
+
+* {
+  box-sizing: border;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Raleway", sans-serif;
+}
+
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #ffffff;
+  padding: 15px;
+  color: #000000;
+  text-align: left;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+.pic1 {
+  max-width: 100%;
+  height: auto;
+}
+
+.Padtop {
+  padding-top: 40px;
+}
+
+.Padbot {
+  padding-bottom: 40px;
+}
+
+h1 {
+  color: Black;
+  text-align: center;
+  font-size: 50px;
+}
+
+#rcorners2 {
+  border-radius: 25px;
+  border: 2px solid black;
+  padding: 5px; 
+  width: 165px;
+  height: 52px;  
+}
+
+.w3-bar .w3-button {
+  padding: 10px;
+}
+
+ul.a {
+  list-style-type: circle;
+}
+
+ul.b {
+  list-style-type: square;
+}
+
+</style>
+</head>
+<body>
+<body class="w3-light-grey">
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-wide"><img src="Pictures/ecologo.png" class="w3-hover-opacity" style="width:100%;max-width:300px"></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button"><h5>About</h5></a>
+      <a href="#eco4" class="w3-bar-item w3-button"><h5>eco4</h5></a>
+      <a href="#who" class="w3-bar-item w3-button"><h5>Who for?</h5></a>
+      <a href="#eligibility" class="w3-bar-item w3-button"><h5>Check Eligibility</h5></a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+  <a href="#eco4" onclick="w3_close()" class="w3-bar-item w3-button">eco4</a>
+  <a href="#who" onclick="w3_close()" class="w3-bar-item w3-button">Who for?</a>
+  <a href="#eligibility" onclick="w3_close()" class="w3-bar-item w3-button">Check Eligibility</a>
+</nav>
+
+<p class="Padbot"></p>
+<br>
+
+<div class="w3-row w3-container" id="home">
+  <div class="w3-col m6 w3-white w3-center">
+    <p class="Padbot"></p>
+	<h1 class="Padtop"><b>Save £1,800 on your energy bills</b></h1>
+	<br>
+	<h3>We can help you check for <b>free</b> to see if you qualify for a government grant worth up to <b>£50,000</b></h3>
+	<br>
+	<h4>Eco4 is a Government back scheme which aims to reduce qualifying homes heating costs by installation of insulation, renewables and district heating connections as well as upgrading inefficient heating systems</h4>
+	<p class="Padbot"></p>
+	<p id="rcorners2"><a href="#eligibility" class="w3-button w3-green w3-hover-teal w3-round-xxlarge">Check Eligibility</a></p>	
+  </div>
+  <div class="w3-col m6 w3-light-grey w3-center">
+    <img src="Pictures/happyhome.jpg" style="width:100%;max-width:725px">
+  </div>
+</div>
+
+
+<br>
+<p class="Padbot"></p>
+
+<div class="w3-row w3-container" id="about">
+  <div class="w3-col m6 w3-light-grey w3-center">
+	<div class="w3-display-container">
+    <img src="Pictures/happyhome2.jpg" class="w3-opacity" style="width:100%;max-width:725px">
+	<div class="w3-display-middle w3-large"><h1 class="w3-opacity"><b>About</b></h1></div>
+	</div>
+  </div>
+  <div class="w3-col m6 w3-white w3-center">
+    <h3 class="Padtop"><b>Xenon Eco</b></h3>
+	<p>Xenon Eco is at the forefront of improving Great Britain’s fuel poverty and help reduce carbon emissions through ECO4 Grant Schemes. Xenon Eco is a dynamic professional specialist in retro fit energy performance improvements. </p>
+	<h5>Our Mission</h5>
+	<p>It is our mission to effectively roll out much needed energy performance improvements through expert installations whilst always keeping in mind the occupiers needs. </p>
+	<h5>Our Background</h5>
+	<p>Xenon Eco has combined experience of over 50 years of surveying and construction expertise. We expertly deliver a one stop service from initial advice through to full installation of energy efficiency improvements. 
+	<br>
+	We manage eligibility, assessment, design, installation and funding.  The whole process from start to finish is efficiently delivered to ensure minimum of fuss to the end users.
+	<br>
+	Xenon Eco has expertise rarely offered in the residential sector. Bringing professionalism from the commercial world into the residential sector we effectively deliver improvements to housing stock to help prevent fuel poverty.  
+	<br>
+	Xenon Eco operates throughout the UK and is operated by a friendly and dynamic team. Any client will be handled by an assigned project manager contactable throughout the installation.
+	</p>
+	<br>
+	<p id="rcorners2"><a href="#eligibility" class="w3-button w3-green w3-hover-teal w3-round-xxlarge">Check Eligibility</a></p>	
+  </div>
+</div>
+
+<br>
+<p class="Padbot"></p>
+
+<div class="w3-row w3-container" id="eco4">
+  <div class="w3-col m6 w3-white w3-center">
+    <p class="Padbot"></p>
+	<h3 class="Padtop"><b>eco4</b></h3>
+	<p>ECO4 is the fourth phase of the Government’s Energy Company Obligation. It started in August 2022 and it's due to continue until 31 March 2026.</p>
+	
+	<p>The ECO4 Scheme aims to provide free energy-saving measures for vulnerable households to improve the efficiency and heating of their home.
+	The Energy Company Obligation (ECO4) is a government energy-efficiency scheme. Through ECO4, eligible homes receive grants for home insulation, upgraded boiler or green heating system (solar, air source heat pumps).
+	<br>
+	ECO4 is funded through energy companies who are obliged by statute to contribute toward improving fuel poverty. This includes  British Gas, EDF Energy, E.ON, NPower, Scottish Power and SSE.
+	<br>
+	ECO4 focusses on improving the least energy efficient homes and households in fuel poverty, as only properties in bands D-G can be treated. It also aims to deliver a more complete upgrade of those homes, shifting to a multi-measure whole-house retrofit approach.
+	</p>
+	<p class="Padbot"></p>
+	<p id="rcorners2"><a href="#eligibility" class="w3-button w3-green w3-hover-teal w3-round-xxlarge">Check Eligibility</a></p>	
+  </div>
+  <div class="w3-col m6 w3-light-grey w3-center">
+	<div class="w3-display-container">
+    <img src="Pictures/epc2.jpg" class="w3-opacity" style="width:100%;max-width:725px">
+	<div class="w3-display-middle w3-large"><h1 class="w3-opacity"><b>eco4</b></h1></div>
+	</div>
+  </div>
+</div>
+
+<br>
+<p class="Padbot"></p>
+<p class="Padbot"></p>
+
+<div class="w3-row w3-container" id="who">
+  <div class="w3-col m6 w3-light-grey w3-center">
+	<div class="w3-display-container">
+    <img src="Pictures/people.jpg" class="w3-opacity" style="width:100%;max-width:725px">
+	<div class="w3-display-middle w3-large "><h1 class="w3-opacity"><b>Who for?</b></h1></div>
+	</div>
+  </div>
+  <div class="w3-col m6 w3-white w3-center">
+    <h3 class="Padtop"><b>Who's eligible for ECO4?</b></h3>
+	<h5>We will help complete assessments before installation and fully assess if you meet the relevant requirements. Whilst there are nuances the key criterias are:</h5>
+	<ul class="a">
+		<li>An EPC rating of D or below</li>
+		<li>Receive at least one of the following benefits: </li>
+	</ul>
+	<ul class="b">
+		<li>Child Benefits</li>
+		<li>Pension Guarantee Credit</li>
+		<li>Income-related Employment</li>
+		<li>Support Allowance (ESA)</li>
+	</ul>
+	<p class="Padbot"></p>
+	<p id="rcorners2"><a href="#eligibility" class="w3-button w3-green w3-hover-teal w3-round-xxlarge">Check Eligibility</a></p>	
+  </div>
+</div>
+
+<br>
+<p class="Padbot"></p>
+
+<form action="mailto:timothy@xenoneco.co.uk?subject=ECO4Check" Subject="Xenon Eligibility Check" method="post" enctype="text/plain" class="w3-container w3-card-4 w3-white w3-text-green w3-margin" style="padding:50px 50px" id="eligibility">
+<h2 class="w3-center">Check Eligibility</h2>
+ 
+<div class="w3-row w3-section">
+  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+    <div class="w3-rest">
+      <input class="w3-input w3-border" name="name" type="text" placeholder="Name">
+    </div>
+</div>
+<div class="w3-row w3-section">
+  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
+    <div class="w3-rest">
+      <input class="w3-input w3-border" name="phone" type="text" placeholder="Phone">
+    </div>
+</div>
+
+<div class="w3-row w3-section">
+  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa fa-commenting"></i></div>
+    <div class="w3-rest">
+		<select class="w3-select w3-border" name="contactpref">
+			<option value="" disabled selected>Please contact me by...</option>
+			<option value="1c">Text</option>
+			<option value="2c">WhatsApp</option>
+			<option value="3c">Email</option>
+			<option value="4c">Phone call - anytime</option>
+			<option value="5c">Phone call - morning only</option>
+			<option value="6c">Phone call - evening only</option>
+		</select>
+    </div>
+</div>
+
+<div class="w3-row w3-section">
+  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa fa-home"></i></div>
+    <div class="w3-rest">
+		<select class="w3-select w3-border" name="proptype">
+			<option value="" disabled selected>I am a.....</option>
+			<option value="1a">Homeowner</option>
+			<option value="2a">Private Tenant</option>
+			<option value="3a">Social Housing Tenant</option>
+			<option value="4a">Landlord</option>
+		</select>
+    </div>
+</div>
+
+<div class="w3-row w3-section">
+  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa fa-group"></i></div>
+    <div class="w3-rest">
+		<select class="w3-select w3-border" name="benefits">
+			<option value="" disabled selected>Does anyone in the property claim any benefits</option>
+			<option value="1b">Yes</option>
+			<option value="2b">No</option>
+			<option value="3b">Not sure?</option>
+		</select>
+    </div>
+</div>
+
+<div class="w3-row w3-section">
+  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope-o"></i></div>
+    <div class="w3-rest">
+      <input class="w3-input w3-border" name="email" type="text" placeholder="Email">
+    </div>
+</div>
+
+<div class="w3-row w3-section">
+  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-building"></i></div>
+    <div class="w3-rest">
+      <input class="w3-input w3-border" name="housenum" type="text" placeholder="House Number or Name">
+    </div>
+</div>
+
+<div class="w3-row w3-section">
+  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope-open"></i></div>
+    <div class="w3-rest">
+      <input class="w3-input w3-border" name="postcode" type="text" placeholder="Post Code">
+    </div>
+</div>
+
+<button class="w3-button w3-block w3-section w3-green w3-ripple w3-padding">Send</button>
+
+</form>
+
+
+<script>
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+
+</body>
+</html>
